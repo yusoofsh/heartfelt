@@ -29,4 +29,4 @@ export default function handler(req: NextRequest) {
 	})
 }
 
-export const runtime = "experimental-edge"
+export const runtime = "edge"
