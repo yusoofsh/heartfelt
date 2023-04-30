@@ -26,5 +26,5 @@ export default async function Page() {
 	)
 }
 
-export const runtime = "experimental-edge"
+export const runtime = "nodejs"
 export const revalidate = 0
