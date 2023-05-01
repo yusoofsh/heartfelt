@@ -1,8 +1,8 @@
-import { exampleRouter } from "~/server/api/routers/example"
+import { databaseRouter } from "~/server/api/routers/database"
 import { createTRPCRouter } from "~/server/api/trpc"
 
 export const appRouter = createTRPCRouter({
-	example: exampleRouter,
+	database: databaseRouter,
 })
 
 // export type definition of API

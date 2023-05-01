@@ -15,7 +15,7 @@
 		"check:format": "prettier --check \"**/*.{json,cjs,mjs,ts,tsx}\"",
 		"check:lint": "eslint \"**/*.{cjs,mjs,ts,tsx}\"",
 		"check:types": "tsc --pretty --noEmit",
-		"db:push": "pnpm drizzle-kit push:mysql"
+		"database:push": "drizzle-kit push:mysql"
 	},
 	"dependencies": {
 		"@clerk/nextjs": "^4.16.4",
