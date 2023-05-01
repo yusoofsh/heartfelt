@@ -1,9 +1,9 @@
 import { desc, eq } from "drizzle-orm"
 import { z } from "zod"
 
+import { slugify } from "~/lib/utils"
 import { createNoteSchema } from "~/app/dashboard/create-note"
 import { editNoteSchema } from "~/app/dashboard/edit-note"
-import { slugify } from "~/lib/utils"
 import { createTRPCRouter, protectedProcedure } from "~/server/api/trpc"
 import { notes } from "~/server/db/schema"
 

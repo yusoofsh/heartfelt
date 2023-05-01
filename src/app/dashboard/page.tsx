@@ -1,5 +1,5 @@
-import { H2, H3 } from "~/components/typography"
 import { api } from "~/lib/api/server"
+import { H2, H3 } from "~/components/typography"
 import CreateNote from "./create-note"
 import NoteCard from "./note-card"
 

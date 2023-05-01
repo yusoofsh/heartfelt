@@ -2,12 +2,12 @@
 
 import { useRouter } from "next/navigation"
 
-import { H3 } from "~/components/typography"
-import { Button } from "~/components/ui/button"
 import { api } from "~/lib/api/client"
 import { type RouterOutputs } from "~/lib/api/types"
-import EditNote from "./edit-note"
 import { Icons } from "~/components/icons"
+import { H3 } from "~/components/typography"
+import { Button } from "~/components/ui/button"
+import EditNote from "./edit-note"
 
 type Props = Pick<
 	RouterOutputs["example"]["getCurrentUserNotes"][0],

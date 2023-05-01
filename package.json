@@ -11,9 +11,9 @@
 		"lint": "next lint",
 		"start": "next start",
 		"check": "pnpm check:apply; pnpm check:format && pnpm check:lint && pnpm check:types",
-		"check:apply": "prettier --write . && eslint --fix .",
-		"check:format": "prettier --check .",
-		"check:lint": "eslint . --ext ts --ext tsx --ext js",
+		"check:apply": "prettier --write \"**/*.{json,cjs,mjs,ts,tsx}\" && eslint --fix \"**/*.{cjs,mjs,ts,tsx}\"",
+		"check:format": "prettier --check \"**/*.{json,cjs,mjs,ts,tsx}\"",
+		"check:lint": "eslint \"**/*.{cjs,mjs,ts,tsx}\"",
 		"check:types": "tsc --pretty --noEmit",
 		"db:push": "pnpm drizzle-kit push:mysql"
 	},
