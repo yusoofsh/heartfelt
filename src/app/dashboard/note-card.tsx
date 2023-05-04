@@ -2,22 +2,22 @@
 
 import { useRouter } from "next/navigation"
 
-import { H3 } from "~/components/typography"
-import { Button } from "~/components/ui/button"
 import { api } from "~/lib/api/client"
 import { type RouterOutputs } from "~/lib/api/types"
-import EditNote from "./edit-note"
 import { Icons } from "~/components/icons"
+import { H3 } from "~/components/typography"
+import { Button } from "~/components/ui/button"
+import EditNote from "./edit-note"
 
 type Props = Pick<
-	RouterOutputs["example"]["getCurrentUserNotes"][0],
+	RouterOutputs["database"]["getCurrentUserNotes"][0],
 	"id" | "title" | "text"
 >
 
 export default function NoteCard({ id, title, text }: Props) {
 	const router = useRouter()
 	const { mutate: deleteNote, isLoading: isDeleting } =
-		api.example.deleteNote.useMutation({ onSuccess: () => router.refresh() })
+		api.database.deleteNote.useMutation({ onSuccess: () => router.refresh() })
 	return (
 		<div className="grid md:flex md:items-center gap-5 md:justify-between border dark:border-stone-700 rounded p-4">
 			<div className="">

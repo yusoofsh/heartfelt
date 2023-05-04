@@ -38,7 +38,7 @@ export default function CreateNote() {
 
 	const router = useRouter()
 
-	const { mutate: createNote, isLoading } = api.example.createNote.useMutation({
+	const { mutate: createNote, isLoading } = api.database.createNote.useMutation({
 		onSuccess() {
 			setOpen(false)
 			reset()

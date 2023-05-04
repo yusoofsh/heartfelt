@@ -44,7 +44,7 @@ export default function EditNote({ id, title, text }: EditNoteSchema) {
 
 	const router = useRouter()
 
-	const { mutate: editNote, isLoading } = api.example.editNote.useMutation({
+	const { mutate: editNote, isLoading } = api.database.editNote.useMutation({
 		onSuccess(_, newData) {
 			setOpen(false)
 			reset(newData)

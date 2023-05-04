@@ -4,7 +4,6 @@ import { ClerkProvider } from "@clerk/nextjs/app-beta/client"
 import "~/styles/globals.css"
 import { siteConfig } from "~/config/site"
 import { cn } from "~/lib/utils"
-import { Analytics } from "~/components/analytics"
 import { env } from "~/env.mjs"
 import { ClientProviders } from "./providers"
 
@@ -71,7 +70,6 @@ export default function RootLayout({ children }: RootLayoutProps) {
 							<div className="flex-1">{children}</div>
 						</main>
 					</ClientProviders>
-					<Analytics />
 				</body>
 			</ClerkProvider>
 		</html>

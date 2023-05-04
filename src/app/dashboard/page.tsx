@@ -1,10 +1,10 @@
-import { H2, H3 } from "~/components/typography"
 import { api } from "~/lib/api/server"
+import { H2, H3 } from "~/components/typography"
 import CreateNote from "./create-note"
 import NoteCard from "./note-card"
 
 export default async function Page() {
-	const notes = await api.example.getCurrentUserNotes.fetch()
+	const notes = await api.database.getCurrentUserNotes.fetch()
 	return (
 		<>
 			<H2 className="mb-5 flex items-center justify-between">
