@@ -6,7 +6,7 @@ settings:
 
 patchedDependencies:
   '@tanstack/react-query@4.14.5':
-    hash: ofxwhsft6yhbqzmuaz6xnxhbqi
+    hash: 2e005bd26f42bdf3ba3b890dad05cbb0be8c68d9ea49d0b505c3b9ddfcc2f28b
     path: patches/@tanstack__react-query@4.14.5.patch
 
 importers:
@@ -39,16 +39,16 @@ importers:
         version: 4.14.5
       '@tanstack/react-query':
         specifier: 4.14.5
-        version: 4.14.5(patch_hash=ofxwhsft6yhbqzmuaz6xnxhbqi)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
+        version: 4.14.5(patch_hash=2e005bd26f42bdf3ba3b890dad05cbb0be8c68d9ea49d0b505c3b9ddfcc2f28b)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
       '@trpc/client':
         specifier: ^10.45.0
         version: 10.45.0(@trpc/server@10.45.0)
       '@trpc/next':
         specifier: ^10.45.0
-        version: 10.45.0(@tanstack/react-query@4.14.5(patch_hash=ofxwhsft6yhbqzmuaz6xnxhbqi)(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(@trpc/client@10.45.0(@trpc/server@10.45.0))(@trpc/react-query@10.45.0(@tanstack/react-query@4.14.5(patch_hash=ofxwhsft6yhbqzmuaz6xnxhbqi)(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(@trpc/client@10.45.0(@trpc/server@10.45.0))(@trpc/server@10.45.0)(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(@trpc/server@10.45.0)(next@14.1.1(@babel/core@7.23.7)(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
+        version: 10.45.0(@tanstack/react-query@4.14.5(patch_hash=2e005bd26f42bdf3ba3b890dad05cbb0be8c68d9ea49d0b505c3b9ddfcc2f28b)(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(@trpc/client@10.45.0(@trpc/server@10.45.0))(@trpc/react-query@10.45.0(@tanstack/react-query@4.14.5(patch_hash=2e005bd26f42bdf3ba3b890dad05cbb0be8c68d9ea49d0b505c3b9ddfcc2f28b)(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(@trpc/client@10.45.0(@trpc/server@10.45.0))(@trpc/server@10.45.0)(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(@trpc/server@10.45.0)(next@14.1.1(@babel/core@7.23.7)(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
       '@trpc/react-query':
         specifier: ^10.45.0
-        version: 10.45.0(@tanstack/react-query@4.14.5(patch_hash=ofxwhsft6yhbqzmuaz6xnxhbqi)(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(@trpc/client@10.45.0(@trpc/server@10.45.0))(@trpc/server@10.45.0)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
+        version: 10.45.0(@tanstack/react-query@4.14.5(patch_hash=2e005bd26f42bdf3ba3b890dad05cbb0be8c68d9ea49d0b505c3b9ddfcc2f28b)(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(@trpc/client@10.45.0(@trpc/server@10.45.0))(@trpc/server@10.45.0)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
       '@trpc/server':
         specifier: ^10.45.0
         version: 10.45.0
@@ -268,6 +268,7 @@ packages:
   '@clerk/clerk-sdk-node@4.13.6':
     resolution: {integrity: sha512-p/bGFvageJ6gTxuyG/VMdl0UiT0HzfT7ymrrcpZjN/lDheCoL5lin5JBBgdV4189tw9xb6wAl2XjsiOvYqo64w==}
     engines: {node: '>=14'}
+    deprecated: 'January 10 2025 marks the end of support for @clerk/clerk-sdk-node as previously announced in our October 2024 deprecation notice. Express users can migrate to the @clerk/express package. For more information, you can find our changelog here: https://clerk.com/changelog/2025-01-10-node-sdk-eol'
 
   '@clerk/nextjs@4.29.3':
     resolution: {integrity: sha512-qPBHjOAEAwKPnBx7eat6oB5SUlqWWTALeize+pY4TRYURliUk/iZtNFFr/smF87bYCNwslZ+vDRQznEQsSpSkA==}
@@ -1506,6 +1507,7 @@ packages:
   eslint@8.56.0:
     resolution: {integrity: sha512-Go19xM6T9puCOWntie1/P997aXxFsOi37JIHRWI514Hc6ZnaHGKY9xFhrU65RT6CcBEzZoGG1e6Nq+DT04ZtZQ==}
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
+    deprecated: This version is no longer supported. Please see https://eslint.org/version-support for other options.
     hasBin: true
 
   espree@9.6.1:
@@ -1937,9 +1939,11 @@ packages:
 
   lodash.clone@4.5.0:
     resolution: {integrity: sha512-GhrVeweiTD6uTmmn5hV/lzgCQhccwReIVRLHp7LT4SopOjqEZ5BbX8b5WWEtAKasjmy8hR7ZPwsYlxRCku5odg==}
+    deprecated: This package is deprecated. Use structuredClone instead.
 
   lodash.isequal@4.5.0:
     resolution: {integrity: sha512-pDo3lu8Jhfjqls6GkMgpahsF9kCyayhgykjyLMNFTKWrpVdAQtYyB4muAMWozBB4ig/dtWAmsMxLEI8wuz+DYQ==}
+    deprecated: This package is deprecated. Use require('node:util').isDeepStrictEqual instead.
 
   lodash.merge@4.6.2:
     resolution: {integrity: sha512-0KpjqXRVvrYyCsX1swR/XTK0va6VQkQM6MNo7PqW77ByjAhoARA8EfrP1N4+KlKj8YS0ZUCtRT/YUuhyYDujIQ==}
@@ -3279,7 +3283,7 @@ snapshots:
 
   '@tanstack/query-core@4.14.5': {}
 
-  '@tanstack/react-query@4.14.5(patch_hash=ofxwhsft6yhbqzmuaz6xnxhbqi)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)':
+  '@tanstack/react-query@4.14.5(patch_hash=2e005bd26f42bdf3ba3b890dad05cbb0be8c68d9ea49d0b505c3b9ddfcc2f28b)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)':
     dependencies:
       '@tanstack/query-core': 4.14.5
       react: 18.2.0
@@ -3291,19 +3295,19 @@ snapshots:
     dependencies:
       '@trpc/server': 10.45.0
 
-  '@trpc/next@10.45.0(@tanstack/react-query@4.14.5(patch_hash=ofxwhsft6yhbqzmuaz6xnxhbqi)(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(@trpc/client@10.45.0(@trpc/server@10.45.0))(@trpc/react-query@10.45.0(@tanstack/react-query@4.14.5(patch_hash=ofxwhsft6yhbqzmuaz6xnxhbqi)(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(@trpc/client@10.45.0(@trpc/server@10.45.0))(@trpc/server@10.45.0)(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(@trpc/server@10.45.0)(next@14.1.1(@babel/core@7.23.7)(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(react-dom@18.2.0(react@18.2.0))(react@18.2.0)':
+  '@trpc/next@10.45.0(@tanstack/react-query@4.14.5(patch_hash=2e005bd26f42bdf3ba3b890dad05cbb0be8c68d9ea49d0b505c3b9ddfcc2f28b)(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(@trpc/client@10.45.0(@trpc/server@10.45.0))(@trpc/react-query@10.45.0(@tanstack/react-query@4.14.5(patch_hash=2e005bd26f42bdf3ba3b890dad05cbb0be8c68d9ea49d0b505c3b9ddfcc2f28b)(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(@trpc/client@10.45.0(@trpc/server@10.45.0))(@trpc/server@10.45.0)(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(@trpc/server@10.45.0)(next@14.1.1(@babel/core@7.23.7)(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(react-dom@18.2.0(react@18.2.0))(react@18.2.0)':
     dependencies:
-      '@tanstack/react-query': 4.14.5(patch_hash=ofxwhsft6yhbqzmuaz6xnxhbqi)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
+      '@tanstack/react-query': 4.14.5(patch_hash=2e005bd26f42bdf3ba3b890dad05cbb0be8c68d9ea49d0b505c3b9ddfcc2f28b)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
       '@trpc/client': 10.45.0(@trpc/server@10.45.0)
-      '@trpc/react-query': 10.45.0(@tanstack/react-query@4.14.5(patch_hash=ofxwhsft6yhbqzmuaz6xnxhbqi)(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(@trpc/client@10.45.0(@trpc/server@10.45.0))(@trpc/server@10.45.0)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
+      '@trpc/react-query': 10.45.0(@tanstack/react-query@4.14.5(patch_hash=2e005bd26f42bdf3ba3b890dad05cbb0be8c68d9ea49d0b505c3b9ddfcc2f28b)(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(@trpc/client@10.45.0(@trpc/server@10.45.0))(@trpc/server@10.45.0)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
       '@trpc/server': 10.45.0
       next: 14.1.1(@babel/core@7.23.7)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
 
-  '@trpc/react-query@10.45.0(@tanstack/react-query@4.14.5(patch_hash=ofxwhsft6yhbqzmuaz6xnxhbqi)(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(@trpc/client@10.45.0(@trpc/server@10.45.0))(@trpc/server@10.45.0)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)':
+  '@trpc/react-query@10.45.0(@tanstack/react-query@4.14.5(patch_hash=2e005bd26f42bdf3ba3b890dad05cbb0be8c68d9ea49d0b505c3b9ddfcc2f28b)(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(@trpc/client@10.45.0(@trpc/server@10.45.0))(@trpc/server@10.45.0)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)':
     dependencies:
-      '@tanstack/react-query': 4.14.5(patch_hash=ofxwhsft6yhbqzmuaz6xnxhbqi)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
+      '@tanstack/react-query': 4.14.5(patch_hash=2e005bd26f42bdf3ba3b890dad05cbb0be8c68d9ea49d0b505c3b9ddfcc2f28b)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
       '@trpc/client': 10.45.0(@trpc/server@10.45.0)
       '@trpc/server': 10.45.0
       react: 18.2.0
@@ -4090,7 +4094,7 @@ snapshots:
       debug: 4.3.4
       enhanced-resolve: 5.15.0
       eslint: 8.56.0
-      eslint-module-utils: 2.8.0(@typescript-eslint/parser@5.62.0(eslint@8.56.0)(typescript@5.3.3))(eslint-import-resolver-node@0.3.9)(eslint-import-resolver-typescript@3.6.1(@typescript-eslint/parser@5.62.0(eslint@8.56.0)(typescript@5.3.3))(eslint-import-resolver-node@0.3.9)(eslint-plugin-import@2.29.1)(eslint@8.56.0))(eslint@8.56.0)
+      eslint-module-utils: 2.8.0(@typescript-eslint/parser@5.62.0(eslint@8.56.0)(typescript@5.3.3))(eslint-import-resolver-node@0.3.9)(eslint-import-resolver-typescript@3.6.1)(eslint@8.56.0)
       eslint-plugin-import: 2.29.1(@typescript-eslint/parser@5.62.0(eslint@8.56.0)(typescript@5.3.3))(eslint-import-resolver-typescript@3.6.1)(eslint@8.56.0)
       fast-glob: 3.3.2
       get-tsconfig: 4.7.2
@@ -4102,7 +4106,7 @@ snapshots:
       - eslint-import-resolver-webpack
       - supports-color
 
-  eslint-module-utils@2.8.0(@typescript-eslint/parser@5.62.0(eslint@8.56.0)(typescript@5.3.3))(eslint-import-resolver-node@0.3.9)(eslint-import-resolver-typescript@3.6.1(@typescript-eslint/parser@5.62.0(eslint@8.56.0)(typescript@5.3.3))(eslint-import-resolver-node@0.3.9)(eslint-plugin-import@2.29.1)(eslint@8.56.0))(eslint@8.56.0):
+  eslint-module-utils@2.8.0(@typescript-eslint/parser@5.62.0(eslint@8.56.0)(typescript@5.3.3))(eslint-import-resolver-node@0.3.9)(eslint-import-resolver-typescript@3.6.1)(eslint@8.56.0):
     dependencies:
       debug: 3.2.7
     optionalDependencies:
@@ -4123,7 +4127,7 @@ snapshots:
       doctrine: 2.1.0
       eslint: 8.56.0
       eslint-import-resolver-node: 0.3.9
-      eslint-module-utils: 2.8.0(@typescript-eslint/parser@5.62.0(eslint@8.56.0)(typescript@5.3.3))(eslint-import-resolver-node@0.3.9)(eslint-import-resolver-typescript@3.6.1(@typescript-eslint/parser@5.62.0(eslint@8.56.0)(typescript@5.3.3))(eslint-import-resolver-node@0.3.9)(eslint-plugin-import@2.29.1)(eslint@8.56.0))(eslint@8.56.0)
+      eslint-module-utils: 2.8.0(@typescript-eslint/parser@5.62.0(eslint@8.56.0)(typescript@5.3.3))(eslint-import-resolver-node@0.3.9)(eslint-import-resolver-typescript@3.6.1)(eslint@8.56.0)
       hasown: 2.0.0
       is-core-module: 2.13.1
       is-glob: 4.0.3
